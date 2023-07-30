@@ -1,1 +1,31 @@
 
+		// to convert Lower case to Upper case from an Array
+    //logic to convert from 'A' to 'a' ---->  65+32
+    //logic to convert from 'a' to 'B' ---->  97-32
+    //logic to convert from 'B' to 'b' ---->  66+32
+    //logic to convert from 'b' to 'B' ---->  98-32
+-----------
+public class ToUpperToLower {
+
+	public static void main(String[] args) {
+		char[] ch= {'a','A','b','C','*,'Y'};
+		char[] ch1=new char[ch.length];
+		for (int i=0;i<ch.length;i++) {
+			if (ch[i]>='a' && ch[i]<='z') {
+				ch1[i]=(char)(ch[i]-32);
+				System.out.println(ch1[i]);
+			}
+			else if(ch[i]>='A' && ch[i]<='Z') {
+				ch1[i]=(char)(ch[i]+32);
+				System.out.println(ch1[i]);
+			}
+			else {
+				System.out.println(ch1[i]);
+			}
+		}
+		
+		
+
+	}
+
+}
