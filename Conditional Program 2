@@ -1,0 +1,29 @@
+//Java program to read three interger value from user and print the middle value
+import java.util.Scanner;
+public class MiddleNumGreater {
+
+	public static void main(String[] args) {
+	
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the three interger values");
+		System.out.println("enter the first value");
+		int a=sc.nextInt();
+		System.out.println("enter the second value");
+		int b=sc.nextInt();
+		System.out.println("enter the third value");
+		int c=sc.nextInt();
+		
+		if(a>b && a<c || a>c && a<b){
+			System.out.println(a + " is the middle value");
+		}
+		else if (b>a && b<c || b>c && b<a){
+		System.out.println(b+" is the middle value");
+    }
+		else
+    {
+			System.out.println(c + " is the middle value");
+    }
+		sc.close();
+	}
+
+}
